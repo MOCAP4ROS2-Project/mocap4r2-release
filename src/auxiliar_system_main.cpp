@@ -1,4 +1,4 @@
-// Copyright 2021 Intelligent Robotics Lab
+// Copyright 2026 Intelligent Robotics Lab
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,23 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
-#include <memory>
-
-#include "lifecycle_msgs/msg/transition.hpp"
-
-#include "mocap4r2_control/AuxiliarNode.hpp"
-#include "rclcpp/rclcpp.hpp"
+#include "mocap4r2_control/auxiliar_system.hpp"
+#include "mocap4r2_control/system_main.hpp"
 
 int main(int argc, char ** argv)
 {
-  rclcpp::init(argc, argv);
-  auto node = std::make_shared<mocap4r2_control::AuxiliarNode>("default");
-  node->trigger_transition(lifecycle_msgs::msg::Transition::TRANSITION_CONFIGURE);
-
-  rclcpp::spin(node->get_node_base_interface());
-
-  rclcpp::shutdown();
-
-  return 0;
+  return mocap4r2_control::system_main<mocap4r2_control::AuxiliarSystem>(argc, argv);
 }
