@@ -1,0 +1,12 @@
+Source: ros-kilted-mocap4r2-gt-tools
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-kilted-ament-copyright <!nocheck>, ros-kilted-ament-flake8 <!nocheck>, ros-kilted-ament-pep257 <!nocheck>, ros-kilted-ament-xmllint <!nocheck>, ros-kilted-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-kilted-mocap4r2-gt-tools
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-numpy, python3-yaml, ros-kilted-geometry-msgs, ros-kilted-launch, ros-kilted-launch-ros, ros-kilted-launch-yaml, ros-kilted-mocap4r2-interfaces, ros-kilted-rclpy, ros-kilted-std-srvs, ros-kilted-tf2-ros-py, ros-kilted-ros-workspace
+Description: Ground-truth tools of MOCAP4ROS2: online localization error (ATE/RPE) with TUM export, map-mocap frame alignment and marker body calibration
