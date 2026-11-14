@@ -1,3 +1,33 @@
+## mocap4r2 (humble) - 2.0.0-1
+
+The packages in the `mocap4r2` repository were released into the `humble` distro by running `/usr/bin/bloom-release --rosdistro humble --track humble mocap4r2 --edit --no-pull-request --override-release-repository-url https://github.com/MOCAP4ROS2-Project/mocap4r2-release.git` on `Sat, 14 Nov 2026 17:42:12 -0000`
+
+These packages were released:
+- `mocap4r2_control`
+- `mocap4r2_gt_tools`
+- `mocap4r2_marker_viz`
+- `mocap4r2_motion_tools`
+- `mocap4r2_robot_gt`
+- `mocap4r2_sim_driver`
+- `mocap4r2_tools`
+
+Version of package(s) in repository `mocap4r2`:
+
+- upstream repository: https://github.com/MOCAP4ROS2-Project/mocap4r2.git
+- release repository: https://github.com/MOCAP4ROS2-Project/mocap4r2-release.git
+- rosdistro version: `2.0.0-1`
+- old version: `0.0.7-1`
+- new version: `2.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.4`
+- catkin_pkg version: `1.1.1`
+- rosdep version: `0.27.0`
+- rosdistro version: `1.1.0`
+- vcstools version: `0.1.42`
+
+
 ## mocap4r2 (lyrical) - 2.0.0-1
 
 The packages in the `mocap4r2` repository were released into the `lyrical` distro by running `/usr/bin/bloom-release --rosdistro lyrical --track lyrical mocap4r2 --no-pull-request --override-release-repository-url https://github.com/MOCAP4ROS2-Project/mocap4r2-release.git` on `Sat, 14 Nov 2026 17:38:45 -0000`
