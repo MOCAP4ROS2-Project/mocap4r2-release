@@ -1,0 +1,12 @@
+Source: ros-humble-mocap4r2-tools
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-humble-ament-copyright <!nocheck>, ros-humble-ament-flake8 <!nocheck>, ros-humble-ament-pep257 <!nocheck>, ros-humble-ament-xmllint <!nocheck>, ros-humble-mocap4r2-sim-driver <!nocheck>, ros-humble-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-humble-mocap4r2-tools
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-yaml, ros-humble-diagnostic-msgs, ros-humble-lifecycle-msgs, ros-humble-mocap4r2-interfaces, ros-humble-mocap4r2-motion-tools, ros-humble-rclpy, ros-humble-ros2bag, ros-humble-ros2cli, ros-humble-ros2param, ros-humble-rosbag2-storage-default-plugins, ros-humble-ros-workspace
+Description: Command line (ros2 mocap4r2) and terminal tools to monitor and control MOCAP4ROS2 systems
