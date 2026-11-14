@@ -1,0 +1,8 @@
+ros-jazzy-mocap4r2-motion-tools (2.0.0-1bookworm) bookworm; urgency=high
+
+  * New package: skeleton_publisher (segments as TF, Cardan joint angles as JointState), zero-phase Butterworth filter, gap filling, C3D writer, and export of recorded sessions to CSV, TUM and C3D.
+  * Contributors: Francisco Martín Rico
+
+ -- "Francisco Martín Rico" <fmrico@gmail.com>  Fri, 13 Nov 2026 23:00:00 -0000
+
+

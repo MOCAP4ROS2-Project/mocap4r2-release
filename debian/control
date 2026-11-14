@@ -1,0 +1,12 @@
+Source: ros-jazzy-mocap4r2-motion-tools
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-jazzy-ament-copyright <!nocheck>, ros-jazzy-ament-flake8 <!nocheck>, ros-jazzy-ament-pep257 <!nocheck>, ros-jazzy-ament-xmllint <!nocheck>, ros-jazzy-rosbag2-storage-default-plugins <!nocheck>, ros-jazzy-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-mocap4r2-motion-tools
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-numpy, ros-jazzy-geometry-msgs, ros-jazzy-mocap4r2-interfaces, ros-jazzy-rclpy, ros-jazzy-rosbag2-py, ros-jazzy-rosidl-runtime-py, ros-jazzy-sensor-msgs, ros-jazzy-tf2-ros-py, ros-jazzy-ros-workspace
+Description: Human motion tools of MOCAP4ROS2: skeleton TF and joint angles, gap filling and zero-phase filtering, and export of recorded sessions to CSV, TUM and C3D
