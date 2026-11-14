@@ -2,28 +2,10 @@
 Changelog for package mocap4r2_robot_gt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.0.7 (2024-01-25)
+2.0.0 (2026-11-14)
 ------------------
-
-0.0.6 (2024-01-23)
-------------------
-
-
-0.0.5 (2024-01-23)
-------------------
-
-
-0.0.4 (2024-01-23)
-------------------
-
-0.0.3 (2024-01-21)
-------------------
-* Rename mocap to mocap4r2 to meet with REP 144
-* Contributors: Francisco Martín Rico
-
-0.0.2 (2024-01-09)
-------------------
-* Multiple rigid bodies and launcher
-* Param to mocap frame
-* Package for GT services
-* Contributors: Francisco Martín Rico, jmguerreroh
+* Rewritten: ground truth as a TF tree parallel to the robot (mocap -> gt_origin -> <robot>_gt), rigid body selected by name, untracked or missing bodies skipped.
+* Fixed RPY order (setRPY), origin offset composition and use of uninitialized transforms.
+* Body to robot transform from a parameter or from TF; ~/set_origin service; ~/pose and ~/odom with filtered velocities.
+* Removed mocap4r2_robot_gt_msgs (SetOrigin is in mocap4r2_interfaces).
+* Contributors: Francisco Martín Rico, José Miguel Guerrero, Juan Carlos Manzanares Serrano, Manuel Fernández Carmona
