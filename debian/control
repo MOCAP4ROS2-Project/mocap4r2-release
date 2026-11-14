@@ -1,0 +1,12 @@
+Source: ros-kilted-mocap4r2-robot-gt
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kilted-ament-cmake, ros-kilted-ament-cmake-gtest <!nocheck>, ros-kilted-ament-lint-auto <!nocheck>, ros-kilted-ament-lint-common <!nocheck>, ros-kilted-geometry-msgs, ros-kilted-mocap4r2-interfaces, ros-kilted-nav-msgs, ros-kilted-rclcpp, ros-kilted-rclcpp-components, ros-kilted-tf2, ros-kilted-tf2-geometry-msgs, ros-kilted-tf2-ros, ros-kilted-ros-workspace
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-kilted-mocap4r2-robot-gt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kilted-geometry-msgs, ros-kilted-launch, ros-kilted-launch-ros, ros-kilted-launch-yaml, ros-kilted-mocap4r2-interfaces, ros-kilted-nav-msgs, ros-kilted-rclcpp, ros-kilted-rclcpp-components, ros-kilted-tf2, ros-kilted-tf2-geometry-msgs, ros-kilted-tf2-ros, ros-kilted-ros-workspace
+Description: Robot ground truth from MOCAP4ROS2 rigid bodies, as a TF tree parallel to the robot's own
