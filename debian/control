@@ -1,0 +1,12 @@
+Source: ros-humble-mocap4r2-control
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-cmake-gtest <!nocheck>, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-diagnostic-msgs <!nocheck>, ros-humble-diagnostic-updater, ros-humble-geometry-msgs, ros-humble-lifecycle-msgs, ros-humble-mocap4r2-interfaces, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-rclcpp-lifecycle, ros-humble-tf2-ros, ros-humble-ros-workspace
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-humble-mocap4r2-control
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-diagnostic-updater, ros-humble-geometry-msgs, ros-humble-launch, ros-humble-launch-ros, ros-humble-launch-yaml, ros-humble-lifecycle-msgs, ros-humble-mocap4r2-interfaces, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-rclcpp-lifecycle, ros-humble-tf2-ros, ros-humble-ros-workspace
+Description: Base node of MOCAP4ROS2 systems: lifecycle, start/stop control, system announcement and diagnostics
