@@ -1,0 +1,12 @@
+Source: ros-jazzy-mocap4r2-tools
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-jazzy-ament-copyright <!nocheck>, ros-jazzy-ament-flake8 <!nocheck>, ros-jazzy-ament-pep257 <!nocheck>, ros-jazzy-ament-xmllint <!nocheck>, ros-jazzy-mocap4r2-sim-driver <!nocheck>, ros-jazzy-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-mocap4r2-tools
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-platformdirs, python3-rich, python3-typing-extensions, python3-yaml, ros-jazzy-diagnostic-msgs, ros-jazzy-lifecycle-msgs, ros-jazzy-mocap4r2-interfaces, ros-jazzy-mocap4r2-motion-tools, ros-jazzy-rclpy, ros-jazzy-ros2bag, ros-jazzy-ros2cli, ros-jazzy-ros2param, ros-jazzy-rosbag2-storage-default-plugins, ros-jazzy-ros-workspace
+Description: Command line (ros2 mocap4r2) and terminal tools to monitor and control MOCAP4ROS2 systems
