@@ -1,0 +1,12 @@
+Source: ros-kilted-mocap4r2-motion-tools
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-kilted-ament-copyright <!nocheck>, ros-kilted-ament-flake8 <!nocheck>, ros-kilted-ament-pep257 <!nocheck>, ros-kilted-ament-xmllint <!nocheck>, ros-kilted-rosbag2-storage-default-plugins <!nocheck>, ros-kilted-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-kilted-mocap4r2-motion-tools
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-numpy, ros-kilted-geometry-msgs, ros-kilted-mocap4r2-interfaces, ros-kilted-rclpy, ros-kilted-rosbag2-py, ros-kilted-rosidl-runtime-py, ros-kilted-sensor-msgs, ros-kilted-tf2-ros-py, ros-kilted-ros-workspace
+Description: Human motion tools of MOCAP4ROS2: skeleton TF and joint angles, gap filling and zero-phase filtering, and export of recorded sessions to CSV, TUM and C3D
