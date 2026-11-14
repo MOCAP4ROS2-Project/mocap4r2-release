@@ -1,0 +1,12 @@
+Source: ros-jazzy-mocap4r2-control
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-gtest <!nocheck>, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-diagnostic-msgs <!nocheck>, ros-jazzy-diagnostic-updater, ros-jazzy-geometry-msgs, ros-jazzy-lifecycle-msgs, ros-jazzy-mocap4r2-interfaces, ros-jazzy-rclcpp, ros-jazzy-rclcpp-components, ros-jazzy-rclcpp-lifecycle, ros-jazzy-tf2-ros, ros-jazzy-ros-workspace
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-mocap4r2-control
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-diagnostic-updater, ros-jazzy-geometry-msgs, ros-jazzy-launch, ros-jazzy-launch-ros, ros-jazzy-launch-yaml, ros-jazzy-lifecycle-msgs, ros-jazzy-mocap4r2-interfaces, ros-jazzy-rclcpp, ros-jazzy-rclcpp-components, ros-jazzy-rclcpp-lifecycle, ros-jazzy-tf2-ros, ros-jazzy-ros-workspace
+Description: Base node of MOCAP4ROS2 systems: lifecycle, start/stop control, system announcement and diagnostics
