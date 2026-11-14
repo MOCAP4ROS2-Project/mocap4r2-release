@@ -1,0 +1,12 @@
+Source: ros-kilted-mocap4r2-marker-viz
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kilted-ament-cmake, ros-kilted-ament-cmake-gtest <!nocheck>, ros-kilted-ament-lint-auto <!nocheck>, ros-kilted-ament-lint-common <!nocheck>, ros-kilted-mocap4r2-interfaces, ros-kilted-rclcpp, ros-kilted-rclcpp-components, ros-kilted-visualization-msgs, ros-kilted-ros-workspace
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-kilted-mocap4r2-marker-viz
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kilted-launch, ros-kilted-launch-ros, ros-kilted-launch-yaml, ros-kilted-mocap4r2-interfaces, ros-kilted-rclcpp, ros-kilted-rclcpp-components, ros-kilted-rviz2, ros-kilted-visualization-msgs, ros-kilted-ros-workspace
+Description: RViz visualization of MOCAP4ROS2 markers, rigid bodies and skeletons
