@@ -1,0 +1,12 @@
+Source: ros-kilted-mocap4r2-tools
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-kilted-ament-copyright <!nocheck>, ros-kilted-ament-flake8 <!nocheck>, ros-kilted-ament-pep257 <!nocheck>, ros-kilted-ament-xmllint <!nocheck>, ros-kilted-mocap4r2-sim-driver <!nocheck>, ros-kilted-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-kilted-mocap4r2-tools
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-platformdirs, python3-rich, python3-typing-extensions, python3-yaml, ros-kilted-diagnostic-msgs, ros-kilted-lifecycle-msgs, ros-kilted-mocap4r2-interfaces, ros-kilted-mocap4r2-motion-tools, ros-kilted-rclpy, ros-kilted-ros2bag, ros-kilted-ros2cli, ros-kilted-ros2param, ros-kilted-rosbag2-storage-default-plugins, ros-kilted-ros-workspace
+Description: Command line (ros2 mocap4r2) and terminal tools to monitor and control MOCAP4ROS2 systems
