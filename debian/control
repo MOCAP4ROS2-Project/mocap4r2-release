@@ -1,0 +1,12 @@
+Source: ros-lyrical-mocap4r2-control
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-gtest <!nocheck>, ros-lyrical-ament-lint-auto <!nocheck>, ros-lyrical-ament-lint-common <!nocheck>, ros-lyrical-diagnostic-msgs <!nocheck>, ros-lyrical-diagnostic-updater, ros-lyrical-geometry-msgs, ros-lyrical-lifecycle-msgs, ros-lyrical-mocap4r2-interfaces, ros-lyrical-rclcpp, ros-lyrical-rclcpp-components, ros-lyrical-rclcpp-lifecycle, ros-lyrical-tf2-ros, ros-lyrical-ros-workspace
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-mocap4r2-control
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-diagnostic-updater, ros-lyrical-geometry-msgs, ros-lyrical-launch, ros-lyrical-launch-ros, ros-lyrical-launch-yaml, ros-lyrical-lifecycle-msgs, ros-lyrical-mocap4r2-interfaces, ros-lyrical-rclcpp, ros-lyrical-rclcpp-components, ros-lyrical-rclcpp-lifecycle, ros-lyrical-tf2-ros, ros-lyrical-ros-workspace
+Description: Base node of MOCAP4ROS2 systems: lifecycle, start/stop control, system announcement and diagnostics
