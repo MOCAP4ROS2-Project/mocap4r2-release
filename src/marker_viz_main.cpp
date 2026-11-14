@@ -1,5 +1,4 @@
-// Copyright 2020 National Institute of Advanced Industrial Science and Technology, Japan
-// Copyright 2024 Intelligent Robotics Lab
+// Copyright 2026 Intelligent Robotics Lab
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,21 +11,16 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-//
-// Author: Floris Erich <floris.erich@aist.go.jp>
-// Author: Jose Miguel Guerrero Hernandez <josemiguel.guerrero@urjc.es>
 
-#include <iostream>
 #include <memory>
-#include "mocap4r2_marker_viz/mocap4r2_marker_viz_node.hpp"
+
+#include "mocap4r2_marker_viz/marker_viz_node.hpp"
 #include "rclcpp/rclcpp.hpp"
 
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
-  auto node = std::make_shared<MarkerVisualizer>();
-  rclcpp::spin(node->get_node_base_interface());
+  rclcpp::spin(std::make_shared<mocap4r2_marker_viz::MarkerVizNode>());
   rclcpp::shutdown();
-
   return 0;
 }
