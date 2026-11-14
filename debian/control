@@ -1,0 +1,12 @@
+Source: ros-lyrical-mocap4r2-gt-tools
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-lyrical-ament-copyright <!nocheck>, ros-lyrical-ament-flake8 <!nocheck>, ros-lyrical-ament-pep257 <!nocheck>, ros-lyrical-ament-xmllint <!nocheck>, ros-lyrical-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-mocap4r2-gt-tools
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-numpy, python3-yaml, ros-lyrical-geometry-msgs, ros-lyrical-launch, ros-lyrical-launch-ros, ros-lyrical-launch-yaml, ros-lyrical-mocap4r2-interfaces, ros-lyrical-rclpy, ros-lyrical-std-srvs, ros-lyrical-tf2-ros-py, ros-lyrical-ros-workspace
+Description: Ground-truth tools of MOCAP4ROS2: online localization error (ATE/RPE) with TUM export, map-mocap frame alignment and marker body calibration
