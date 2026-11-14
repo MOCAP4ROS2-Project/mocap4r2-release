@@ -1,0 +1,12 @@
+Source: ros-lyrical-mocap4r2-tools
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-lyrical-ament-copyright <!nocheck>, ros-lyrical-ament-flake8 <!nocheck>, ros-lyrical-ament-pep257 <!nocheck>, ros-lyrical-ament-xmllint <!nocheck>, ros-lyrical-mocap4r2-sim-driver <!nocheck>, ros-lyrical-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://mocap4ros2-project.github.io
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-mocap4r2-tools
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-platformdirs, python3-rich, python3-typing-extensions, python3-yaml, ros-lyrical-diagnostic-msgs, ros-lyrical-lifecycle-msgs, ros-lyrical-mocap4r2-interfaces, ros-lyrical-mocap4r2-motion-tools, ros-lyrical-rclpy, ros-lyrical-ros2bag, ros-lyrical-ros2cli, ros-lyrical-ros2param, ros-lyrical-rosbag2-storage-default-plugins, ros-lyrical-ros-workspace
+Description: Command line (ros2 mocap4r2) and terminal tools to monitor and control MOCAP4ROS2 systems
